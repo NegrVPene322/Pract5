@@ -1,0 +1,40 @@
+﻿<Window x:Class="pract5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract5"
+        mc:Ignorable="d"
+        Title="Практическая 5" Height="454" Width="530" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="363*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label Content="Первая тройка"  Height="29"/>
+            <TextBox TextWrapping="Wrap" Name="tb_t1" Text="" Width="120"/>
+            <Label Content="Вторая тройка" Height="24"/>
+            <TextBox TextWrapping="Wrap" Name="tb_t2" Text="" Width="120"/>
+            <Label Content="Третья тройка" Height="24"/>
+            <TextBox TextWrapping="Wrap" Name="tb_t3" Text="" Width="120"/>
+            <Button Content="Ввести тройки" Name="bt_input" Margin="3" Click="tb_input_Click"/>
+            <Button Content="Сравнить 1 и 2" Name="bt_1and2" Margin="3" Click="bt_1and2_Click"/>
+            <Button Content="Сравнить 2 и 3" Name="bt_2and3" Margin="3" Click="bt_2and3_Click"/>
+            <Button Content="Сравнить 1 и 3" Name="bt_1and3" Margin="3" Click="bt_1and3_Click"/>
+            <Button Content="Сравнить все три тройки" Name="bt_all" Margin="3" Click="bt_all_Click"/>
+            <TextBlock TextWrapping="Wrap" Text="Сравнение 2 троек"/>
+            <TextBox TextWrapping="Wrap" IsReadOnly="True" Name="tb_2t"  Width="120"/>
+            <TextBlock TextWrapping="Wrap" Text="Сравнение 3 троек"/>
+            <TextBox TextWrapping="Wrap"  IsReadOnly="True" Name="tb_3t" Width="120"/>
+
+
+
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Button Content="Выход" Name="bt_esc" Margin="5" Click="bt_esc_Click"/>
+            <Button Content="О программе" Name="bt_inf" Margin="5" Click="bt_inf_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
